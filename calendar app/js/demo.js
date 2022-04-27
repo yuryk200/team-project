@@ -31,7 +31,8 @@ $(document).ready(function() {
 			name: $("input[name='eventname']", this).val(),
 			date: [$("input[name='startdate']", this).val(), $("input[name='enddate']", this).val()],
 			description: $("input[name='desc']", this).val(),
-			type: $("input[name='type']", this).val()
+			color: $("input[name='color'", this).val(),
+			type: $("select[name='type']", this).val()
 		};
 		active_events = JSON.parse(localStorage.getItem('events'));
 		active_events.push(curAdd);
@@ -45,10 +46,13 @@ $(document).ready(function() {
 		$("#menu2").click(function()
 		{
 			$('#calendar').css("z-index", -10);
+			$('#eventform').css("z-index", 10);
 		});
 
 		$("#menu1").click(function()
 		{
 			$('#calendar').css("z-index", 10);
 			$('#bubble1').css("z-index", 10);
+			$('#eventform').css("z-index", -10);
 		});
+		

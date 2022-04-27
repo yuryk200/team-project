@@ -29,17 +29,30 @@
 	<div id="navbarContainer">
 	
 	<form id="eventform">
-		<label for="fname">When</label>
-		<input type="text" id="startdate" name="startdate">
+		<label for="fname">When</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="text" id="startdate" name="startdate">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		<input type="text" id="enddate" name="enddate"><br><br>
-		<label for="fname">ID</label>
-		<input type="text" id="iden" name="iden"><br><br>
-		<label for="fname">Event Name</label>
+		<label for="fname">ID</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="text" id="iden" name="iden" placeholder="Event ID"><br><br>
+		<label for="fname">Event Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		<input type="text" id="eventname" name="eventname"><br><br>
-		<label for="fname">description</label>
+		<label for="fname">description</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		<input type="text" id="desc" name="desc"><br><br>
-		<label for="fname">type</label>
-		<input type="text" id="type" name="type"><br><br>  
+		<label for="fname">type</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<select name="type">
+			<option value ="holiday">holiday</option>
+			<option value ="birthday">birthday</option>
+			<option value ="event">event</option>
+		</select><br><br>
+		<label for="fname">colours</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input list="colors" name="color">
+		<datalist id="colors">
+			<option value="Internet Explorer">
+			<option value="Firefox">
+			<option value="Chrome">
+			<option value="Opera">
+			<option value="Safari">
+		</datalist><br><br>
 		<input type="submit" value="Submit">
 		<button class="btn-action" id="removeBtn" disabled>REMOVE EVENT</button>
 	</form>
@@ -53,7 +66,7 @@
     </div>
     <div id="menuWrapper">
       <div id="menu1" class="menuElement" onclick="move('1', '144px', '#fff')"><i class="fas fa-home" style="color:white"></i></div>
-      <div id="menu2" class="menuElement" onclick="move('2', '432px', '#fff')"><i class="fas fa-calendar"  style="color:white"></i></div>
+      <div id="menu2" class="menuElement" onclick="move('2', '432px', '#6ac1c5')"><i class="fas fa-calendar"  style="color:white"></i></div>
       <div id="menu3" class="menuElement" onclick="move('3', '720px', 'blue')"><i class="fab fa-instagram" style="color:white"></i></div>
       <div id="menu4" class="menuElement" onclick="move('4', '1008px', '#fff')"><i class="fas fa-users" style="color:white"></i></div>
     </div>
