@@ -9,11 +9,29 @@ body {
   overflow: hidden;
 }
 
+.meta th {
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 8px;
+}
+
+.meta td {
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 8px;
+}
+
+.meta tr {
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 8px;
+}
+
 form {
   width: 100%;
   height: 80%;
   border-radius: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 label {
@@ -32,9 +50,67 @@ select{
   border-radius:15px;
   border:0;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  height: 50px
+  height: 50px;
 }
 
+#list {
+  width: 100%;
+  height: 80%;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+
+.column {
+  width: 46%;
+  height: 400px;
+  margin-top: 50px;
+}
+
+.eventlist {
+  background-color: blue;
+  top: 87px;
+  width: 80%;
+  min-width: 400px;
+  height: 70%;
+  border-radius: 20px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  justify-content: center;
+  left: 144px;
+}
+  
+.eventlist:after {
+  content: "";
+  display: table;
+  clear: both;
+}  
+  
+
+ul {
+	height: 40%;
+	display:inline-block;
+	list-style-position: outside;
+	list-style-type: none;
+	padding: 0;
+	border-left: solid 2px red;
+	border-right: solid 2px red;
+	border-bottom: solid 2px red;
+	border-top: solid 2px red;
+}
+
+li{
+  float:right;
+  display:inline-block;
+  margin-left: 100px;
+}
+
+p {
+	float:left;
+  display:inline-block;
+}
+	
+	
 input {
   width:40%;
   resize: vertical;
@@ -42,7 +118,7 @@ input {
   border-radius:15px;
   border:0;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  height: 40px
+  height: 40px;
 } 
 
 
@@ -105,7 +181,7 @@ input {
 #bgWrapper {
   filter: url(#goo);
   width: 100%;
-  height: 100px;
+  height: 200px;
   position: absolute;
   bottom: 60px;
 }
